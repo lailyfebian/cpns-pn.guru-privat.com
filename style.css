@@ -2251,6 +2251,7 @@ footer .list-produk i {
 
 
 
+
 /* ADVANTAGE SECTION */
 .advantage-section {
     position: relative;
@@ -2448,6 +2449,13 @@ footer .list-produk i {
         padding: 45px 15px 55px;
     }
 
+    .advantage-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .advantage-header {
         margin-bottom: 28px;
     }
@@ -2504,6 +2512,11 @@ footer .list-produk i {
 
 /* SMALL MOBILE */
 @media (max-width: 380px) {
+    .advantage-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .advantage-header h2 {
         font-size: 23px;
     }
@@ -2531,6 +2544,7 @@ footer .list-produk i {
         font-size: 11px;
     }
 }
+
 
 
 

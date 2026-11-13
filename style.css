@@ -1969,6 +1969,7 @@ footer .list-produk i {
 
 
 
+
 /* MATERIAL SECTION */
 .material-section {
     position: relative;
@@ -2067,6 +2068,7 @@ footer .list-produk i {
     height: 62px;
     margin-bottom: 22px;
     border-radius: 16px;
+    flex-shrink: 0;
 }
 
 .material-icon i {
@@ -2148,7 +2150,14 @@ footer .list-produk i {
 /* MOBILE */
 @media (max-width: 600px) {
     .material-section {
-        padding: 42px 12px;
+        padding: 42px 15px;
+    }
+
+    .material-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .material-header {
@@ -2168,69 +2177,75 @@ footer .list-produk i {
     }
 
     .material-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
 
     .material-card {
-        padding: 15px 9px;
+        padding: 20px;
         border-radius: 13px;
     }
 
     .material-icon {
-        width: 43px;
-        height: 43px;
+        width: 46px;
+        height: 46px;
         margin-bottom: 13px;
         border-radius: 11px;
     }
 
     .material-icon i {
-        font-size: 25px !important;
+        font-size: 26px !important;
         -webkit-text-stroke: 1px currentColor;
     }
 
     .material-card h3 {
-        font-size: 13px !important;
+        font-size: 16px !important;
         line-height: 1.4;
         margin-bottom: 8px;
     }
 
     .material-card p {
-        font-size: 11px;
-        line-height: 1.55;
+        font-size: 13px;
+        line-height: 1.6;
     }
 }
 
 /* SMALL MOBILE */
 @media (max-width: 380px) {
+    .material-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .material-grid {
-        gap: 6px;
+        gap: 12px;
     }
 
     .material-card {
-        padding: 13px 7px;
+        padding: 17px;
         border-radius: 11px;
     }
 
     .material-icon {
-        width: 38px;
-        height: 38px;
+        width: 42px;
+        height: 42px;
         margin-bottom: 11px;
     }
 
     .material-icon i {
-        font-size: 22px !important;
+        font-size: 23px !important;
     }
 
     .material-card h3 {
-        font-size: 12px !important;
+        font-size: 15px !important;
     }
 
     .material-card p {
-        font-size: 10px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.55;
     }
 }
+
 
 
 
